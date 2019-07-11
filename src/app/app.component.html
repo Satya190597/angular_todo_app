@@ -1,11 +1,11 @@
 <div class="container">
-  <form action="">
+  <form #todoForm="ngForm">
     <div class="form-group">
       <h1 class="text-center">To Do App</h1>
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Add Todo" name="todo" #todo>
+        <input type="text" class="form-control" placeholder="Add Todo" name="todo"  [(ngModel)]="todo">
         <div class="input-group-append">
-          <span class="input-group-text" (click)="addTodo(todo.value)"><i class="material-icons">add</i></span>
+          <span class="input-group-text" (click)="addTodo()"><i class="material-icons">add</i></span>
         </div>
       </div>
     </div>
