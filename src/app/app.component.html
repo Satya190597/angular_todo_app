@@ -1,17 +1,17 @@
 <div class="container">
   <form action="">
     <div class="form-group">
-      <h1 class="text-center text-primary">To Do App</h1>
+      <h1 class="text-center">To Do App</h1>
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Add Todo" name="todo" #todo>
         <div class="input-group-append">
-          <span class="input-group-text" (click)="addTodo(todo.value)">Add Item</span>
+          <span class="input-group-text" (click)="addTodo(todo.value)"><i class="material-icons">add</i></span>
         </div>
       </div>
     </div>
-    <div>
+    <div class="data">
       <ul>
-        <li *ngFor="let item of todoArray">{{item}}</li>
+        <li *ngFor="let item of todoArray;let i = index">{{item}}<i class="material-icons" (click)="delete(i)">delete</i></li>
       </ul>
     </div>
   </form>

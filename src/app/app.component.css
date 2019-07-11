@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway'); /*Google Font*/
 body
 {
     padding: 0;
@@ -7,4 +8,29 @@ form
 {
     max-width: 25em;
     margin: 1em auto;
+    background: #fcfcfcfb;
+    padding: 3%;
+}
+form h1
+{
+    font-family: "Raleway";    
+    color:#F97300;
+}
+.data ul
+{
+    list-style: none;
+    padding: 0;
+}
+.data ul li
+{
+    background-color: #ffffff;
+    border-left: 4px solid #ffa600;
+    padding: 1em;
+    margin: 1em auto;
+    font-family: "Raleway"
+}
+.data ul li i
+{
+    float: right;
+    color: #fc5858;
 }

@@ -14,4 +14,8 @@ export class AppComponent {
     this.todoArray.push(value);
     console.log(value)
   }
+  delete(index)
+  {
+    this.todoArray.splice(index,1)
+  }
 }
