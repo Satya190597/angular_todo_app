@@ -3,11 +3,16 @@
     <div class="form-group">
       <h1 class="text-center text-primary">To Do App</h1>
       <div class="input-group">
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" placeholder="Add Todo" name="todo" #todo>
         <div class="input-group-append">
-          <span class="input-group-text">Add Item</span>
+          <span class="input-group-text" (click)="addTodo(todo.value)">Add Item</span>
         </div>
       </div>
+    </div>
+    <div>
+      <ul>
+        <li *ngFor="let item of todoArray">{{item}}</li>
+      </ul>
     </div>
   </form>
 </div>
